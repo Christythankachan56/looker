@@ -18,6 +18,7 @@ explore: mydata {
   join: my_data_custom_fields {
     view_label: "Custom: Fields"
     sql: LEFT JOIN UNNEST(${mydata.config}) as my_data_custom_fields ;;
+    sql_where: ${my_data_custom_fields.type} == 'STRING' ;;
     relationship: one_to_many
   }
 }
