@@ -13,3 +13,11 @@ persist_with: test_new_default_datagroup
 explore: event_searches {}
 
 explore: searches {}
+
+explore: mydata {
+  join: my_data_custom_fields {
+    view_label: "Custom: Fields"
+    sql: LEFT JOIN UNNEST(${mydata.config}) as my_data_custom_fields ;;
+    relationship: one_to_many
+  }
+}
