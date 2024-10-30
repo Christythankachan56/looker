@@ -23,7 +23,7 @@ view: mydata {
 
   dimension: name {
     description: "The total number of orders for each user"
-    type: number
+    type: string
     sql: ${TABLE}.name ;;
   }
 
