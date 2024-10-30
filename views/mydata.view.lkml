@@ -27,5 +27,7 @@ view: mydata {
     sql: ${TABLE}.name ;;
   }
 
-  dimension: config {hidden:yes}
+  dimension: config {
+    hidden:yes
+  }
 }
