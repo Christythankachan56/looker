@@ -1,4 +1,4 @@
-connection: "looker-private-demo"
+connection: "looker-pixel-perfect-poc"
 
 # include all the views
 include: "/views/**/*.view"
@@ -16,9 +16,9 @@ explore: searches {}
 
 explore: mydata {
   join: my_data_custom_fields {
-    view_label: "Custom: Fields"
+    view_label: "Custom String : Fields"
     sql: LEFT JOIN UNNEST(${mydata.config}) as my_data_custom_fields ;;
-    sql_where: ${my_data_custom_fields.type} == 'STRING' ;;
     relationship: one_to_many
   }
+
 }
