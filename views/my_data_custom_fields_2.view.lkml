@@ -1,4 +1,4 @@
-view: my_data_custom_fields {
+view: my_data_custom_fields_2 {
   dimension: name {}
   dimension: value {
     hidden: yes
@@ -9,7 +9,7 @@ view: my_data_custom_fields {
 
   measure: valueforus {
     label: "Field: Value"
-    sql: MAX(${value}) ;;
+    type: sum
+    sql: ${value} ;;
   }
-
 }
