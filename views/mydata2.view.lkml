@@ -1,5 +1,7 @@
 view: mydata2 {
 
+  label: "Sample Data Test"
+
   sql_table_name: `elastic-pocs.school.test_custom_two` ;;
 
   # Define your dimensions and measures here, like this:

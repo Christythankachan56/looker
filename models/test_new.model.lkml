@@ -18,15 +18,15 @@ explore: mydata {
   join: my_data_custom_fields {
     view_label: "Custom String : Fields"
     sql: LEFT JOIN UNNEST(${mydata.config}) as my_data_custom_fields ;;
-    sql_where: ${my_data_custom_fields.type} = 'STRING'  ;;
     relationship: one_to_many
   }
 
 }
 
 explore: mydata2 {
+  label: "Sample Data Set Two"
   join: my_data_custom_fields_2 {
-    view_label: "Custom String : Fields"
+    view_label: "Extra : Fields"
     sql: LEFT JOIN UNNEST(${mydata2.config}) as my_data_custom_fields_2 ;;
     relationship: one_to_many
   }
