@@ -14,5 +14,6 @@ application: access_key_demo {
     use_form_submit: yes
     core_api_methods: ["me", "all_user_attributes", "delete_user_attribute", "create_user_attribute"]
     external_api_urls: ["http://127.0.0.1:3000", "http://localhost:3000"]
+    scoped_user_attributes: [ "test_new_access_key_demo_access_key" ]
   }
 }
