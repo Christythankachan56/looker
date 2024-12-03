@@ -21,3 +21,9 @@ application: access_key_demo {
     scoped_user_attributes: [ "test_new_access_key_demo_access_key" ]
   }
 }
+
+visualization: {
+  label: "My Viz"
+  id: "my_viz"
+  file: "myviz.js"
+}
