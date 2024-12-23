@@ -21,3 +21,8 @@ application: access_key_demo {
     scoped_user_attributes: [ "test_new_access_key_demo_access_key" ]
   }
 }
+
+constant: db_connection {
+  value: "looker-pixel-perfect-poc"
+  export: override_optional
+}
